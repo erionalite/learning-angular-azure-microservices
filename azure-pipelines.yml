@@ -27,7 +27,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
    command: 'build'
-   projects: 'Angular-Azure.csproj'
+   projects: '**\Angular-Azure.csproj'
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(Build SourcesDirectory)'
