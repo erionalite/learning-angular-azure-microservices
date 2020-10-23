@@ -21,6 +21,7 @@ steps:
   inputs:
     command: 'restore'
     feedsToUse: 'select'
+    projects: 'Angular-Azure\Angular-Azure.csproj'
 - task: VSBuild@1
   inputs:
     solution: '**\*.sln'
